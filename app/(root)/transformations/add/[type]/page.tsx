@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddTransformationTypePage  = () => {
+const AddTransformationTypePage = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const AddTransformationTypePage  = () => {
   )
 }
 
-export default AddTransformationTypePage 
+export default AddTransformationTypePage
