@@ -21,18 +21,19 @@ export const metadata: Metadata = {
     description: "A AI-Powered to generate your imagination",
 };
 
-
 export default function RootLayout({
     children,
 }: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
-        <ClerkProvider appearance={{
-            variables: {
-                colorPrimary: '#624cf5'
-            }
-        }}>
+        <ClerkProvider
+            appearance={{
+                variables: {
+                    colorPrimary: "#624cf5",
+                },
+            }}
+        >
             <html lang="en">
                 <body
                     className={cn(
@@ -41,12 +42,12 @@ export default function RootLayout({
                     )}
                 >
                     <header>
-                        <SignedOut>
+                        {/* <SignedOut>
                             <SignInButton />
                         </SignedOut>
                         <SignedIn>
                             <UserButton />
-                        </SignedIn>
+                        </SignedIn> */}
                     </header>
                     {children}
                 </body>
